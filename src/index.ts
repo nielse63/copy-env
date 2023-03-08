@@ -35,7 +35,10 @@ const copyEnv = async (options: TConfig = { ...configDefaults }) => {
     ...configDefaults,
     ...options,
   };
-  const { cwd, src, dest, gitAdd, ignoreRegex } = config;
+  const { src, dest, gitAdd, ignoreRegex } = config;
+  const cwd = path.isAbsolute(config.cwd)
+    ? config.cwd
+    : path.resolve(process.cwd(), config.cwd);
   const srcPath = path.join(cwd, src);
   const destPath = path.join(cwd, dest);
   const ignoreRgxExp =

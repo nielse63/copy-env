@@ -67,5 +67,11 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'warn',
       },
     },
+    {
+      files: ['cli.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
   ],
 };

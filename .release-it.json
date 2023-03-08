@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "before:init": ["npm run docs"]
+  },
+  "github": {
+    "release": true
+  },
+  "git": {
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}",
+    "addUntrackedFiles": true
+  }
+}

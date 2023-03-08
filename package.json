@@ -26,7 +26,8 @@
     "build": "tsc -p config/tsconfig.cjs.json && tsc -p config/tsconfig.mjs.json",
     "prepack": "npm run build",
     "docs": "typedoc --options config/typedoc.json",
-    "postdocs": ".bin/docs-cleanup"
+    "postdocs": ".bin/docs-cleanup",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -75,6 +76,7 @@
     "jest-extended": "^3.2.4",
     "lint-staged": "^13.1.2",
     "prettier": "^2.6.2",
+    "release-it": "^15.7.0",
     "ts-node": "^10.9.1",
     "typedoc": "^0.23.26",
     "typedoc-plugin-markdown": "^3.14.0",

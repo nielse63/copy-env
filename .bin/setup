@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -e
+
+# functions
+function trash {
+    local src=$1
+    src_basename=$(basename "$src")
+    now=$(date +%s)
+
+    if ! [ -e "$src" ]; then
+      echo "$src not found"
+      return
+    fi
+
+    # check for trash, just in case
+    if [ -d  "$HOME/.Trash" ]; then
+      mv "$src" "$HOME/.Trash/${src_basename}_${now}_${RANDOM}"
+    else
+      rm -rf "$src"
+    fi
+}
+
+# vars
+root_dir=$(dirname $(dirname "$0"))
+cd "$root_dir"
+root=$(pwd)
+bin_dir="$root/.bin"
+scripts_dir="$bin_dir/scripts"
+
+# install dependencies
+cd "$scripts_dir"
+if ! [ -d "$scripts_dir/node_modules" ]; then
+  npm ci
+fi
+
+# run setup script
+node setup.js
+
+# delete .bin/scripts and setup dir
+cd "$root"
+trash .bin/scripts
+trash .bin/setup
+npm pkg delete scripts.setup
+
+# initialize git
+# trash .git
+# git init
+
+# install depenendenies
+npm ci

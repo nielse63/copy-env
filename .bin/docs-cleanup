@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+const path = require('path');
+const fsp = require('fs/promises');
+
+const docsCleanup = async () => {
+  const docs = path.resolve(__dirname, '../docs');
+  const files = (await fsp.readdir(docs))
+    .filter((file) => file.endsWith('.md'))
+    .map((file) => path.resolve(docs, file));
+  const promises = files.map(async (file) => {
+    const content = await fsp.readFile(file, 'utf-8');
+    const newContent = content.replace(/\.\/docs\//g, './');
+    await fsp.writeFile(file, newContent);
+  });
+  await Promise.all(promises);
+};
+
+docsCleanup().catch(console.error);

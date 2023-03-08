@@ -1,0 +1,7 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "basePath": "../",
+  "entryPoints": ["../src/copy-env.ts"],
+  "out": "../docs",
+  "cleanOutputDir": false
+}

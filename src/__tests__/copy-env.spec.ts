@@ -2,18 +2,8 @@ import fs from 'fs';
 import fsp from 'fs/promises';
 import os from 'os';
 import path from 'path';
-import copyEnv, { exec } from '..';
-
-describe('exec', () => {
-  it('should execute given command', async () => {
-    const stdout = await exec('echo "howdy!"');
-    expect(stdout).toEqual('howdy!');
-  });
-
-  it('should throw an error', async () => {
-    await expect(exec('exit  1')).toReject();
-  });
-});
+import { copyEnv } from '../copy-env';
+import { exec } from '../exec';
 
 describe('copyEnv', () => {
   // vars

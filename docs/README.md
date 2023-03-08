@@ -1,10 +1,12 @@
+@nielse63/copy-env / [Exports](modules.md)
+
 # copy-env
 
 > Automate managing example .env files
 
 <div align="center">
   <a href="https://github.com/nielse63/copy-env">
-    <img src="./docs/copy-env.png" alt="nielse63/copy-env" width="640" height="320" />
+    <img src="./copy-env.png" alt="nielse63/copy-env" width="640" height="320" />
   </a>
 </div>
 
@@ -48,7 +50,7 @@ Options:
 
 ### API
 
-See the view API usage at [`docs/modules.md`](./docs/modules.md).
+See the view API usage at [`docs/modules.md`](./modules.md).
 
 ## Contributing
 

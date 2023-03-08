@@ -1,7 +1,7 @@
 {
-  "name": "typescript-repo-template",
+  "name": "copy-env",
   "version": "1.0.0",
-  "description": "A GitHub repo template for TypeScript projects",
+  "description": "Automate managing example .env files",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -11,7 +11,6 @@
     "access": "public"
   },
   "scripts": {
-    "setup": ".bin/setup",
     "test": "jest",
     "prepare": "husky install",
     "start": "node dist/index.js",
@@ -22,19 +21,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nielse63/typescript-repo-template.git"
+    "url": "git+https://github.com/nielse63/copy-env.git"
   },
   "keywords": [
-    "typescript",
-    "repo-template",
-    "template"
+    "env",
+    "dotenv",
+    "cli",
+    ".env",
+    "config",
+    "settings",
+    "utils"
   ],
   "author": "Erik Nielsen <erik@312development.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nielse63/typescript-repo-template/issues"
+    "url": "https://github.com/nielse63/copy-env/issues"
   },
-  "homepage": "https://github.com/nielse63/typescript-repo-template#readme",
+  "homepage": "https://github.com/nielse63/copy-env#readme",
   "engines": {
     "node": "^16.19.0",
     "npm": "^v8.19.3"
@@ -64,6 +67,6 @@
     "typescript": "^4.5.3"
   },
   "lint-staged": {
-    "*.{ts,js,json,md}": "prettier --write"
+    "*.{ts,js,json,md,yml}": "prettier --write"
   }
 }

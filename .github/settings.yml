@@ -2,10 +2,10 @@
 
 repository:
   # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
-  name: typescript-repo-template
-  description: A GitHub repo template for TypeScript projects
-  homepage: https://github.com/nielse63/typescript-repo-template
-  topics: typescript, repo-template, template
+  name: copy-env
+  description: Automate managing example .env files
+  homepage: https://github.com/nielse63/copy-env
+  topics: env, dotenv, cli, .env, config, settings, utils
   private: false
   has_issues: true
   has_projects: false

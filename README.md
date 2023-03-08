@@ -1,23 +1,23 @@
-# typescript-repo-template
+# copy-env
 
-> A GitHub repo template for TypeScript projects
+> Automate managing example .env files
 
 <div align="center">
-  <a href="https://github.com/nielse63/typescript-repo-template">
-    <img src="docs/social.jpeg" alt="nielse63/typescript-repo-template" width="640">
+  <a href="https://github.com/nielse63/copy-env">
+    <img src="docs/copy-env.png" alt="nielse63/copy-env" width="640" height="320>
   </a>
 
   <!-- <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/nielse63/typescript-repo-template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nielse63/copy-env"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nielse63/typescript-repo-template">View Demo</a>
+    <a href="https://github.com/nielse63/copy-env">View Demo</a>
     ·
-    <a href="https://github.com/nielse63/typescript-repo-template/issues">Report Bug</a>
+    <a href="https://github.com/nielse63/copy-env/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nielse63/typescript-repo-template/issues">Request Feature</a>
+    <a href="https://github.com/nielse63/copy-env/issues">Request Feature</a>
   </p> -->
 </div>
 
@@ -45,7 +45,7 @@ nvm install v16.19.0
 ```bash
 # create the repo and clone it
 gh repo create my-awesome-project \
-  --template nielse63/typescript-repo-template \
+  --template nielse63/copy-env \
   --clone
 cd my-awesome-project
 
@@ -57,7 +57,7 @@ npm run setup
 
 ```bash
 # clone the repo into a custom directory
-git clone https://github.com/nielse63/typescript-repo-template my-awesome-project
+git clone https://github.com/nielse63/copy-env my-awesome-project
 cd my-awesome-project
 
 # switch to ideal node version
@@ -84,7 +84,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 - [ ] Handle git initilization during setup more gracefully
 - [ ] Write tests for setup and backup scripts
 
-See the [open issues](https://github.com/nielse63/typescript-repo-template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/nielse63/copy-env/issues) for a full list of proposed features (and known issues).
 
 ## Contributing
 
@@ -106,4 +106,4 @@ Distributed under the MIT License. See [`LICENSE.txt`](./LICENSE.txt) for more i
 
 ## Contact
 
-Project Link: [https://github.com/nielse63/typescript-repo-template](https://github.com/nielse63/typescript-repo-template)
+Project Link: [https://github.com/nielse63/copy-env](https://github.com/nielse63/copy-env)

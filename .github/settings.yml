@@ -9,7 +9,7 @@ repository:
   private: false
   has_issues: true
   has_projects: false
-  has_wiki: true
+  has_wiki: false
   has_downloads: false
   default_branch: main
   allow_merge_commit: false
@@ -18,7 +18,7 @@ repository:
   delete_branch_on_merge: true
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
-  has_discussions: true
+  has_discussions: false
   allow_auto_merge: true
   allow_update_branch: true
   security_and_analysis:

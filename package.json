@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/copy-env",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Automate managing example .env files",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.js",

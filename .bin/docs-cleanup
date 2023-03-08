@@ -9,7 +9,9 @@ const docsCleanup = async () => {
     .map((file) => path.resolve(docs, file));
   const promises = files.map(async (file) => {
     const content = await fsp.readFile(file, 'utf-8');
-    const newContent = content.replace(/\.\/docs\//g, './');
+    const newContent = content
+      .replace(/\.\/docs\//g, './')
+      .replace(/\.\/LICENSE/g, '../LICENSE');
     await fsp.writeFile(file, newContent);
   });
   await Promise.all(promises);

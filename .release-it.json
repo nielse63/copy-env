@@ -1,7 +1,5 @@
 {
-  "hooks": {
-    "before:init": ["npm run docs"]
-  },
+  "hooks": {},
   "github": {
     "release": true
   },

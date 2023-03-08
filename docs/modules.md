@@ -31,7 +31,7 @@
 
 #### Defined in
 
-src/copy-env.ts:6
+[src/copy-env.ts:6](https://github.com/nielse63/copy-env/blob/7ec94d5/src/copy-env.ts#L6)
 
 ---
 
@@ -52,7 +52,7 @@ src/copy-env.ts:6
 
 #### Defined in
 
-src/copy-env.ts:39
+[src/copy-env.ts:39](https://github.com/nielse63/copy-env/blob/7ec94d5/src/copy-env.ts#L39)
 
 ## Functions
 
@@ -107,4 +107,4 @@ const output = await copyEnv({
 
 #### Defined in
 
-src/copy-env.ts:91
+[src/copy-env.ts:91](https://github.com/nielse63/copy-env/blob/7ec94d5/src/copy-env.ts#L91)

@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/copy-env",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "description": "Automate managing example .env files",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.js",
@@ -27,7 +27,7 @@
     "prepack": "npm run build",
     "docs": "typedoc --options config/typedoc.json",
     "postdocs": ".bin/docs-cleanup",
-    "release": "release-it"
+    "release": "dotenv release-it"
   },
   "repository": {
     "type": "git",
@@ -64,6 +64,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.6.0",
     "babel-jest": "^29.5.0",
+    "dotenv-cli": "^7.0.0",
     "eslint": "^8.35.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.7.0",

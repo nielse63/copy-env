@@ -1,8 +1,15 @@
-# copy-env
+# @nielse63/copy-env
 
 > Automate managing example .env files
 
 <div align="center">
+  <div>
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/nielse63/copy-env/pr-check.yml?style=for-the-badge">
+    <img alt="Codecov" src="https://img.shields.io/codecov/c/github/nielse63/copy-env?style=for-the-badge">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/nielse63/copy-env?style=for-the-badge">
+    <img alt="npm" src="https://img.shields.io/npm/v/@nielse63/copy-env?style=for-the-badge">
+    <img alt="GitHub" src="https://img.shields.io/github/license/nielse63/copy-env?style=for-the-badge">
+  </div>
   <a href="https://github.com/nielse63/copy-env">
     <img src="./docs/copy-env.png" alt="nielse63/copy-env" width="640" height="320" />
   </a>
@@ -48,7 +55,7 @@ Options:
 
 ### API
 
-See the view API usage at [`docs/modules.md`](./docs/modules.md).
+See the view API on [GitHub Pages](https://nielse63.github.io/copy-env/modules.html).
 
 ## Contributing
 
@@ -64,7 +71,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/nielse63/copy-env/blob/main/LICENSE) for more information.
 
 ## Contact
 

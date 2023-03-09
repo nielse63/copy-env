@@ -5,13 +5,16 @@ const fsp = require('fs/promises');
 const docsCleanup = async () => {
   const docs = path.resolve(__dirname, '../docs');
   const files = (await fsp.readdir(docs))
-    .filter((file) => file.endsWith('.md'))
+    .filter((file) => file.endsWith('.html'))
     .map((file) => path.resolve(docs, file));
   const promises = files.map(async (file) => {
     const content = await fsp.readFile(file, 'utf-8');
     const newContent = content
       .replace(/\.\/docs\//g, './')
-      .replace(/\.\/LICENSE/g, '../LICENSE');
+      .replace(
+        /\.\/LICENSE/g,
+        'https://github.com/nielse63/copy-env/blob/main/LICENSE'
+      );
     await fsp.writeFile(file, newContent);
   });
   await Promise.all(promises);

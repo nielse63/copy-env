@@ -3,5 +3,8 @@
   "basePath": "../",
   "entryPoints": ["../src/copy-env.ts"],
   "out": "../docs",
-  "cleanOutputDir": false
+  "cleanOutputDir": false,
+  "excludePrivate": true,
+  "excludeInternal": true,
+  "excludeProtected": true
 }

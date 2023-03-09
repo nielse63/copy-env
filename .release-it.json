@@ -1,11 +1,12 @@
 {
-  "hooks": {},
+  "hooks": {
+    "before:init": [".bin/pre-release"]
+  },
   "github": {
     "release": true
   },
   "git": {
     "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
-    "commitMessage": "chore: release v${version}",
     "tagName": "v${version}",
     "addUntrackedFiles": true
   }

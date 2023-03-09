@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+npm run lint
+npm run build
+npm test
+npm run docs
+
+# commit changes
+changed_files=$(git diff --name-only)
+if [ "$changed_files" ]; then
+  git add .
+  git commit -m 'Pre-release: generating docs and formatting files' --no-verify
+fi

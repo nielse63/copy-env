@@ -1,9 +1,9 @@
+import cp from 'child_process';
 import fs from 'fs';
 import fsp from 'fs/promises';
 import path from 'path';
-import { exec } from './exec';
 
-export type CopyEnvOptions = {
+export interface Options {
   /**
    * current working directory
    *
@@ -34,9 +34,9 @@ export type CopyEnvOptions = {
    * @defultValue `/^#/`
    */
   ignoreRegex?: RegExp | string;
-};
+}
 
-export type CopyEnvReturnObject = {
+export interface ReturnValue {
   src: {
     path: string;
     content: string;
@@ -45,7 +45,7 @@ export type CopyEnvReturnObject = {
     path: string;
     content: string;
   };
-};
+}
 
 const defaults = {
   cwd: process.cwd(),
@@ -53,6 +53,25 @@ const defaults = {
   dest: '.env.sample',
   gitAdd: false,
   ignoreRegex: /^#/,
+};
+
+/**
+ * Execute a command line process
+ *
+ * @internal
+ * @param {string} cmd
+ * @param {object} options
+ * @returns {string}
+ */
+export const exec = (cmd: string, options = {}): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    cp.exec(cmd, options, (error, stdout, stderr) => {
+      if (error) {
+        return reject(new Error(stderr));
+      }
+      resolve(`${stdout}`.trim());
+    });
+  });
 };
 
 /**
@@ -85,43 +104,10 @@ const defaults = {
  * // }
  * ```
  *
- * @param {object} options - optional options object
+ * @param {Options} options - optional options object
  * @returns {object} - object containing the paths and content of the input and output files
  */
-export const copyEnv = async (
-  options: {
-    /**
-     * current working directory
-     *
-     * @defultValue `process.cwd()`
-     */
-    cwd?: string;
-    /**
-     * input file name
-     *
-     * @defultValue `.env`
-     */
-    src?: string;
-    /**
-     * output file name
-     *
-     * @defultValue `.env.sample`
-     */
-    dest?: string;
-    /**
-     * whether to check-in to git or not
-     *
-     * @defultValue `false`
-     */
-    gitAdd?: boolean;
-    /**
-     * regex of lines to ignore
-     *
-     * @defultValue `/^#/`
-     */
-    ignoreRegex?: RegExp | string;
-  } = {}
-): Promise<CopyEnvReturnObject> => {
+export const copyEnv = async (options: Options = {}): Promise<ReturnValue> => {
   const config = {
     ...defaults,
     ...options,

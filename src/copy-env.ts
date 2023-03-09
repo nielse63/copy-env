@@ -65,7 +65,8 @@ const defaults = {
  */
 export const exec = (cmd: string, options = {}): Promise<string> => {
   return new Promise((resolve, reject) => {
-    cp.exec(cmd, options, (error, stdout, stderr) => {
+    const [file, ...args] = cmd.split(' ');
+    cp.execFile(file, [...args], options, (error, stdout, stderr) => {
       if (error) {
         return reject(new Error(stderr));
       }

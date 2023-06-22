@@ -49,7 +49,7 @@
   },
   "homepage": "https://github.com/nielse63/copy-env#readme",
   "engines": {
-    "node": "^16.19.1",
+    "node": "^16.20.1",
     "npm": "^v8.19.3"
   },
   "dependencies": {

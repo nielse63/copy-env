@@ -15,14 +15,14 @@
   </a>
 </div>
 
-Often times you'll want to be able to share and check-in your `.env` files to share with your team, or to remember wht environment variables are necessry for your project. `copy-env` automatically copies your `.env` file, removes the secret values, and saves it to an `.env.sample` file.
+Oftentimes, you'll want to be able to share and check in your `.env` files with your team or to remember which environment variables are necessary for your project. `copy-env` automatically copies your `.env` file, removes the secret values, and saves it to an `.env.sample` file.
 
 ## Installation
 
 Install the package globally to use the CLI:
 
 ```bash
-npm i -g @nielse53/copy-env
+npm i -g @nielse63/copy-env
 ```
 
 Or install it in your project for scoped CLI usage, and to use the API:

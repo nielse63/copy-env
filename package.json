@@ -49,11 +49,10 @@
   },
   "homepage": "https://github.com/nielse63/copy-env#readme",
   "engines": {
-    "node": "^16.20.1",
-    "npm": "^v8.19.3"
+    "node": ">=18.19.0"
   },
   "dependencies": {
-    "commander": "^11.0.0"
+    "commander": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",

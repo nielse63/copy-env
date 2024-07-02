@@ -59,7 +59,7 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",
@@ -78,7 +78,7 @@
     "prettier": "^3.3.2",
     "release-it": "^17.4.0",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.26.2",
+    "typedoc": "^0.26.3",
     "typescript": "^5.5.2"
   },
   "lint-staged": {

@@ -59,7 +59,7 @@
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
     "@types/jest": "^29.5.12",
-    "@types/node": "^22.5.2",
+    "@types/node": "^22.5.4",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",
@@ -67,8 +67,8 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^28.8.2",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-jest-extended": "^2.4.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.5",
@@ -78,7 +78,7 @@
     "prettier": "^3.3.3",
     "release-it": "^17.6.0",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.26.6",
+    "typedoc": "^0.26.7",
     "typescript": "^5.5.4"
   },
   "lint-staged": {

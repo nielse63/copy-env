@@ -55,11 +55,11 @@
     "commander": "^12.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.7",
-    "@babel/preset-env": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
     "@babel/preset-typescript": "^7.25.7",
     "@types/jest": "^29.5.13",
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.7.5",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",
@@ -76,10 +76,10 @@
     "jest-extended": "^4.0.2",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
-    "release-it": "^17.7.0",
+    "release-it": "^17.8.2",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.26.8",
-    "typescript": "^5.6.2"
+    "typedoc": "^0.26.9",
+    "typescript": "^5.6.3"
   },
   "lint-staged": {
     "*.{ts,js,json,md,yml}": "prettier --write"

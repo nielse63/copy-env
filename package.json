@@ -52,7 +52,7 @@
     "node": ">=18.20.5"
   },
   "dependencies": {
-    "commander": "^13.1.0"
+    "commander": "^14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",

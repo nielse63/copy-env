@@ -55,11 +55,11 @@
     "commander": "^14.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.7",
-    "@babel/preset-env": "^7.27.2",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
     "@babel/preset-typescript": "^7.27.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.0.7",
+    "@types/node": "^24.0.10",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",

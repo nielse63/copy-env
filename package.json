@@ -78,7 +78,7 @@
     "prettier": "^3.6.2",
     "release-it": "^19.0.4",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.28.11",
+    "typedoc": "^0.28.12",
     "typescript": "^5.9.2"
   },
   "lint-staged": {

@@ -52,14 +52,14 @@
     "node": ">=18.20.5"
   },
   "dependencies": {
-    "commander": "^14.0.0"
+    "commander": "^14.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
     "@babel/preset-env": "^7.28.3",
     "@babel/preset-typescript": "^7.27.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.3.1",
+    "@types/node": "^24.4.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",
@@ -78,7 +78,7 @@
     "prettier": "^3.6.2",
     "release-it": "^19.0.4",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.28.12",
+    "typedoc": "^0.28.13",
     "typescript": "^5.9.2"
   },
   "lint-staged": {

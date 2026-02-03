@@ -52,14 +52,14 @@
     "node": ">=18.20.5"
   },
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.6",
-    "@babel/preset-env": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
     "@babel/preset-typescript": "^7.28.5",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.0.10",
+    "@types/node": "^25.2.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "babel-jest": "^29.7.0",

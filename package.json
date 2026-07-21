@@ -79,7 +79,7 @@
     "release-it": "^20.2.1",
     "ts-node": "^10.9.2",
     "typedoc": "^0.28.20",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "lint-staged": {
     "*.{ts,js,json,md,yml}": "prettier --write"
